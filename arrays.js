@@ -1,12 +1,47 @@
-var chocolateBars = ["snckers", "hundred grand", "kitkat", "skittles"]
 
-<<<<<<< HEAD
-function addElementToBeginningOfArray( arrayArg, elementArg ){
-  let newArray = [...arrayArg]
-  }
-=======
-function addElementToBeginningOfArray() {
- var myPets = ["cat", "dog"]
- return myPets = ["skunk" ...myPets]
+var chocolateBars = ['snickers', 'hundred grand', 'kitkat', 'skittles']
+
+
+function addElementToBeginningOfArray(array, element) {
+return [element, ...array]
 }
->>>>>>> cc1af30f1e82722c1425bb844cfe33f5e5f15db0
+
+function destructivelyAddElementToBeginningOfArray(array, element){
+array.unshift(element)
+return array
+}
+
+function addElementToEndOfArray(array, element) {
+return [...array, element]
+}
+
+function destructivelyAddElementToEndOfArray(array, element) {
+array.push(element)
+
+return array
+}
+
+function accessElementInArray(array, index) {
+return array[index]
+}
+
+function destructivelyRemoveElementFromBeginningOfArray(array) {
+array.shift()
+
+return array
+}
+
+function removeElementFromBeginningOfArray(array) {
+return array.slice(1)
+}
+
+function destructivelyRemoveElementFromEndOfArray(array) {
+array.pop()
+
+return array
+}
+
+function removeElementFromEndOfArray(array) {
+return array.slice(0, array.length - 1)
+}
+
